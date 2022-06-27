@@ -1,0 +1,114 @@
+<!-- Citi Bike Mapping -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Hawaii's Wildfire Risk</title>
+    <link rel="icon" href="img/fire.png">
+    <!-- Fire icons created by Freepik - Flaticon  hawaiiFire.jpg-->
+
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500|Roboto:300,300i,400,400i">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <meta property="og:url" content="https://naokatoh.github.io/hawaii-wildfire/">
+    <meta property="og:type" content="Hawaii's Wildfire Risk ">
+    <meta property="og:title" content="Data shows that Hawaii is prone to fire risks">
+    <meta property="og:description" content="Every county in Hawaii has a high level of wildfire danger in 2020">
+    <meta property="og:image" content="img/hawaiiFire">
+
+</head>
+
+<body>
+<h1 class ="robotoMono">Hawaii's Wildfire Risk</h1>
+<h2>Data shows the Aloha State is prone to fire risks</h2>
+
+<div class="top-picture">
+    <img src="img/hawaiiFireTop.jpg" art="Firefighters on scene in Hawaii Volcanoes National Park, evening of August 6, 2018" style="display: block; margin: auto;">
+    <small>Firefighters on scene in Hawaii Volcanoes National Park, evening of August 6, 2018(<a href="https://www.nps.gov/havo/learn/news/20180807_pr_fire-grows.htm" target="_blank">National Park Service Photo/D.Benitiez)</a> </small>
+</div>
+
+
+
+<p class="content">
+    Extreme weather events all over the world is occurred many parts of the world. Hawaii is not an exception. Drought condition is particularly severe this year, according to <a href="https://www.kitv.com/news/local/drought-wildfire-conditions-expected-to-worsen-as-hawaii-enters-summer-dry-season/article_29b505a0-e6b5-11ec-8941-eb2b4f62bb8c.html" target="_blank">the Hawaii Department of Land and Natural Resources</a>. Arid weather not only affects human activity and crops, but also increases the risk of wildfires. 
+</p>
+
+<p class="content">
+    Compared to the states on the West Coast, such as California, which are prone to large wildfires, Hawaii is blessed with a humid subtropical climate. There is little impression of a high risk of wildfires. Yet, data show that Hawaii is at high risk for wildfires across its entire territory.
+</p>
+
+
+<p class="chart">
+<img src="img/barHawaiiBP.svg" alt=" ">
+</p>
+
+<p class="content">
+ 
+
+
+    According to the <a href="https://www.fs.usda.gov/rds/archive/Catalog/RDS-2020-0016" target="new">the US Department of Agriculture's dataset</a>, which evaluate the statewide wildfire risk, when the counties with the lowest values in the Burn Probability (the annual probability of wildfire burning in a specific location) within nation for each county are compared state by state, Hawaii’s county with the lowest Burn Probability has the highest risk.
+</p>
+
+
+<p class="content">
+    Each year, about 0.5% of Hawaii's total land area burns, which is equal to or greater than the proportion burned of any other US state, according to <a href="https://www.hawaiiwildfire.org/home" target="_blank">the Hawaii Wildfire Management Organization</a>. Although Hawaii is famous for active volcanos, which <a href="https://wildfiretoday.com/2011/03/15/hawaii-volcano-causes-75-acre-wildfire/" target="new">sometimes cause wildfire</a> by eruption, over 98% of wildfires are said to be human caused.
+
+</p>
+
+<p class="content">
+    It is clear from the map that, with the exception of Kalawao, Hawaii's counties are separated by islands. Because they are separated by oceans, wildfires should be unlikely to spread beyond the counties. Why, then, is the risk of wildfire so high in every county in the state of Hawaii?
+</p>
+
+
+
+
+<p class="content">
+    One reason is the disappearance of pineapple and sugarcane plantations in the 1960s, when Hawaii became increasingly dependent on tourism rather than agriculture. Unabandoned farmland is covered with <a href="https://www.civilbeat.org/2019/08/hawaii-is-losing-as-much-of-its-land-to-wildfires-as-any-other-state/" target="new">non-native grasses that are highly flammable</a>, which made the Islands vulnerable to wildfire. 
+</p>
+
+
+<p class="content">
+    Climate change is also contributing to the increase in wildfires in Hawaii, experts say. Rising sea surface temperatures in Hawaii cause more storms during the Winter, and the rainfall brought by the storms results in an increase in flammable vegetation.
+</p>
+
+
+<!-- <input id="slider" type="range" min="0" max="12" step="1" value="0">    -->
+<div id='map' ></div>
+
+<!-- <div><h3>2021</h3></div>
+<div id='map2' ></div> -->
+<p class="content">
+    Source: This fire risk dataset comes from <a href= "https://www.fs.usda.gov/rds/archive/Catalog/RDS-2020-0016" target="_blank">Department of Agriculture</a>.
+    
+   
+    
+    
+   
+</p>
+<div class="map-overlay" id="legend"><img src="img/legend.png" alt="% of burn probability within nation"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type='text/javascript' src="map.js"></script>
+    
+<button type="button" onclick="location.href='https://naokatoh.github.io/pointsunknown/'">Go back</button>
+</body>
+
+</html>
